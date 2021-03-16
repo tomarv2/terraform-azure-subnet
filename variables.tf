@@ -2,10 +2,6 @@ variable "key_name" {
   description = "The SSH key name (NOTE: key should pre-exist)"
 }
 
-variable "Email" {
-  description = "email address to be used for tagging (suggestion: use group email address)"
-}
-
 variable "teamid" {
   description = "(Required) Name of the team/group e.g. devops, dataengineering. Should not be changed after running 'tf apply'"
 }
