@@ -40,5 +40,5 @@ output "network_security_group_rule" {
 
 output "subnet_network_security_group_association_id" {
   description = "Network subnet group assoication id"
-  value = azurerm_subnet_network_security_group_association.subnet_association.id
+  value       = azurerm_subnet_network_security_group_association.subnet_association.id
 }

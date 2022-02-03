@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 module "network_security_group" {
-  source = "git@github.com:tomarv2/terraform-azure-network-security-group.git"
+  source = "git@github.com:tomarv2/terraform-azure-network-security-group.git?ref=v0.0.1"
 
   resource_group_name = "demo-resource_group"
   location            = "westus2"
@@ -19,7 +19,7 @@ module "subnet" {
   source = "../../"
 
   virtual_network_name = "demo-vnet"
-  resource_group_name = "demo-resource_group"
+  resource_group_name  = "demo-resource_group"
   # ---------------------------------------------
   # Note: Do not change teamid and prjid once set.
   teamid = var.teamid
