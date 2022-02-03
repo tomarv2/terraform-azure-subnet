@@ -79,6 +79,9 @@ _testmain.go
 /test/run.out
 /test/times.out
 
-# ignore requried vars file
-#**/test_data
-**/test_data/*.tfvars
+# ignore test file(s)
+**test**
+examples/*test
+remote_backend.tf
+# Do not ignore files in .github (actions)
+!.github
