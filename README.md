@@ -115,7 +115,7 @@ provider "azurerm" {
 }
 
 module "network_security_group" {
-  source = "git@github.com:tomarv2/terraform-azure-network-security-group.git"
+  source = "git::git@github.com:tomarv2/terraform-azure-network-security-group.git?ref=v0.0.1"
 
   resource_group_name = "demo-resource_group"
   location            = "westus2"

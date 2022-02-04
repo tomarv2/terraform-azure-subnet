@@ -1,9 +1,18 @@
+terraform {
+  required_version = ">= 1.0.1"
+  required_providers {
+    azurerm = {
+      version = ">= 2.90"
+    }
+  }
+}
+
 provider "azurerm" {
   features {}
 }
 
 module "network_security_group" {
-  source = "git@github.com:tomarv2/terraform-azure-network-security-group.git?ref=v0.0.1"
+  source = "git::git@github.com:tomarv2/terraform-azure-network-security-group.git?ref=v0.0.1"
 
   resource_group_name = "demo-resource_group"
   location            = "westus2"
